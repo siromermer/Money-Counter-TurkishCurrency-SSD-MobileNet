@@ -11,7 +11,7 @@ import tensorflow as tf
 
 
 # tflite model
-interpreter = tf.lite.Interpreter(model_path=r"C:\Users\sirom\tr_money_detector\money_model_lite\custom_model_lite\detect.tflite")
+interpreter = tf.lite.Interpreter(model_path="detect.tflite")
 interpreter.allocate_tensors()
 
 # input and output 
@@ -24,7 +24,7 @@ output_details = interpreter.get_output_details()
 labels = ['bir', 'bes', 'on', 'yirmibes', 'elli']  
 
  # viode file that you want to see
-video_path = r"C:\Users\sirom\Downloads\VID_20231231_143333.mp4"
+video_path = r"C:\Users\sirom\Downloads\VID_20231231_143333.mp4" # !! here you need to write your videos path
 # Open video file 
 cap = cv2.VideoCapture(video_path)
 
@@ -86,7 +86,7 @@ while cap.isOpened(): # Returns true if video capturing has been initialized alr
 
     print(detections)
 
-    # Her kare üzerindeki işlemleri gerçekleştirdikten sonra frame'i gösterind
+    
     cv2.imshow('Frame', frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
