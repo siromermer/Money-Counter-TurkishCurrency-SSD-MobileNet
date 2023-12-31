@@ -1,3 +1,11 @@
+images_for_testing : Images that you want to test <br>
+test_results : result of your test images (labeled ,annotated images)<br>
+detect.tflite : tflite model<br>
+labelmap.txt : labels <br>
+photo_detector.py : for testing new images execute this file<br>
+video_detector.py : for testing model in video use this file <br><br>
+
+
 I trained a model that counts Turkish currency, it's a money counter.<br>
 In near future , i will use this model in some Mobile App that is why i trained this model<br>
 
