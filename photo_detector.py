@@ -7,8 +7,8 @@ import random
 import matplotlib.pyplot as plt
 
 testimage_path='images_for_testing/'   # Path to test images folder
-model_path=r'C:\Users\sirom\tr_money_detector\money_model_lite\custom_model_lite\detect.tflite'   # Path to .tflite model file
-labels_path=r'C:\Users\sirom\tr_money_detector\money_model_lite\custom_model_lite\labelmap.txt'  # change this to your path
+model_path='detect.tflite'   # Path to .tflite model file
+labels_path='labelmap.txt'  # change this to your path
 
 
 images = glob.glob(testimage_path + '/*.jpg') + glob.glob(testimage_path + '/*.jpeg') + glob.glob(testimage_path + '/*.png') + glob.glob(testimage_path + '/*.bmp')
